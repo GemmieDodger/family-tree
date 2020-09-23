@@ -1,0 +1,17 @@
+{
+  "name": "js-family-tree",
+  "version": "1.0.0",
+  "description": "practice for npm set up",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "keywords": [
+    "testing"
+  ],
+  "author": "gdruce",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.4.2"
+  }
+}
