@@ -1,5 +1,5 @@
 const familyTree = require ('./family-tree')
-
+// labels from jest
 describe('Family Tree', function(){
     test('I exist in the tree', function(){
         const me = familyTree[0]
@@ -20,6 +20,11 @@ describe('Family Tree', function(){
     test('Grandfather exists in tree', function(){
         const grandfather = familyTree[4]
         expect(grandfather.name).toEqual('John')
+    })
+    test('Mother older than daughter',function(){
+        const sister = familyTree[1]
+        const mother = familyTree[2]
+        expect(mother.age).toBeGreaterThan(sister.age)  //reviewing this
     })
 
 })
